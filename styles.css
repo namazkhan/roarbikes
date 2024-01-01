@@ -1,0 +1,256 @@
+html {
+    background-image: linear-gradient(#FC5E55, #FA4083);
+    
+}
+
+body {
+    background-image: url(Images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.container {
+    /* background-color: rgb(4, 34, 4); */
+    width: 1024px;
+    min-height: 300px;
+    margin: 0px auto 0px auto;
+}
+
+header {
+    /* background-color: rgb(13, 83, 13);
+    min-height: 100px; */
+    padding: 18px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+    /* align-items: center; */
+}
+
+nav {
+    /* display: flex; It works inside of parent */
+    /* display: inline-block; It doesn't work inside of parent*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav p {
+    padding: 0px 2px 0px 2px;
+}
+
+main {
+    /* background-color: rgb(7, 141, 7); */
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.main2 {
+    margin-bottom: 50px;
+}
+
+.cards {
+    /* background-color: rgb(44, 156, 33); */
+    /* min-height: 300px; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card1 {
+    /* background-color: rgb(212, 1, 212); */
+    background-image: url(Images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card2 {
+    /* background-color: rgb(139, 1, 139); */
+    background-image: url(Images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card3 {
+    /* background-color: rgb(50, 2, 50); */
+    background-image: url(Images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.herobox1 {
+    /* background-color: brown; */
+    flex: 2;
+    padding-right: 6.25rem;
+}
+
+.hero-button:hover {
+    background-color: black;
+    animation-duration: 0.5ms;
+    color: white;
+}
+
+.herobox2 {
+    /* background-color: rgb(248, 186, 0); */
+    flex: 1;
+}
+
+.herobox2 img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.385);
+    border-radius: 5px;
+}
+
+.card1, .card2, .card3 {
+    padding: 30px 30px 20px 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.266);
+    /* Box-sizing: border box; - just squeezes(hugs) boxes by keeping padding inside of the boxes */
+}
+
+h1 {
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.266);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.cards p {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin-top: 10px;
+}
+
+.cards i {
+    font-size: 100px;
+    /* padding-top: 30px; */
+}
+
+.cards a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-button {
+    background-color: white;
+    color: #FA4083;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    text-decoration: none;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.216);
+    /* border-radius: 4px; */
+}
+
+a.hero-button {
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+nav a.hero-button {
+    margin-left: 20px;
+}
+
+.navbutton {
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    padding: 11px 20px;
+    font-family: 'Playfair Display', serif;
+    /* margin-left: 6px; */
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbutton a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbutton:hover {
+    background-color: rgba(255, 255, 255, 0.203);
+    color: white;
+}
+
+/* Dropdown Navbutton Style start */
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 15px;
+    text-align: center;
+    margin-left: -22px;
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 140px;
+    margin-top: 3px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown .navbutton a {
+    color: #FA4083;
+}
+
+.dropdown .navbutton:hover {
+    background-color: black;
+}
+
+.dropdown .navbutton a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Dropdown Navbutton Style finish */
+
+.testimonials {
+    display: flex;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.author {
+    font-style: italic;
+    text-align: end;
+    padding-top: 10px;
+}
+
+.tbox :nth-child(2) {
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
