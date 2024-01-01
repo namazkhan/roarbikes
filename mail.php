@@ -1,8 +1,8 @@
 <?php
-if(isset( $_POST['name']))
-$name = $_POST['name'];
-if(isset( $_POST['email']))
-$email = $_POST['email'];
+if(isset( $_GET['name']))
+$name = $_GET['name'];
+if(isset( $_GET['email']))
+$email = $_GET['email'];
 
 
 $content="From: $name";
