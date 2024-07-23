@@ -45,12 +45,15 @@ main {
     min-height: 300px;
     display: flex;
     align-items: center;
-    padding-bottom: 30rem;
     /* justify-content: space-between; */
 }
 
 .main2 {
     margin-bottom: 50px;
+}
+
+.contact-padd {
+    padding-bottom: 30rem;
 }
 
 .cards {
