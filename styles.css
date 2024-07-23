@@ -45,6 +45,7 @@ main {
     min-height: 300px;
     display: flex;
     align-items: center;
+    padding-bottom: 28rem;
     /* justify-content: space-between; */
 }
 
